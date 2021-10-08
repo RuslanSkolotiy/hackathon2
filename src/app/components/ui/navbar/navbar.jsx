@@ -1,5 +1,5 @@
-import React from "react"
-import { Link, NavLink } from "react-router-dom"
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,7 +12,8 @@ const Navbar = () => {
           data-bs-target="#navbarTogglerDemo01"
           aria-controls="navbarTogglerDemo01"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -21,17 +22,30 @@ const Navbar = () => {
           </Link>
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <NavLink to="/" exact className="nav-link" activeClassName="active">
-                Home
+              <NavLink
+                to="/"
+                exact
+                className="nav-link"
+                activeClassName="active"
+              >
+                Главная
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/favorites" className="nav-link" activeClassName="active">
-                Favorites
+              <NavLink
+                to="/favorites"
+                className="nav-link"
+                activeClassName="active"
+              >
+                Избранное
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/examples" className="nav-link" activeClassName="active">
+              <NavLink
+                to="/examples"
+                className="nav-link"
+                activeClassName="active"
+              >
                 Examples
               </NavLink>
             </li>
@@ -39,7 +53,7 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
