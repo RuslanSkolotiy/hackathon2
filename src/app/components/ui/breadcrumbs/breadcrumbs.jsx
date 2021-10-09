@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 
 const Breadcrumbs = ({ children }) => {
   return (
@@ -6,6 +7,10 @@ const Breadcrumbs = ({ children }) => {
       <ol className="breadcrumb">{children}</ol>
     </nav>
   )
+}
+
+Breadcrumbs.propTypes = {
+  children: PropTypes.any,
 }
 
 export default Breadcrumbs
