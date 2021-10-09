@@ -6,7 +6,7 @@ const ExampleMemberCard = () => {
     <div className="mb-5">
       <h2>MemberCard</h2>
       <div>
-        <MemberCard />
+        <MemberCard {...{}} />
       </div>
     </div>
   )
