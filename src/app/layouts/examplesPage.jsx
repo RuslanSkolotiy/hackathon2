@@ -8,6 +8,7 @@ import ExampleSlider from "./examples/exampleSlider"
 import ExampleMemberCard from "./examples/exampleMemberCard"
 import Breadcrumbs from "../components/ui/breadcrumbs/breadcrumbs"
 import BreadcrumbsItem from "../components/ui/breadcrumbs/breadcrumbsItem"
+import ExampleGoogleMap from "./examples/exampleGoogleMap"
 
 const ExamplesPage = () => {
   return (
@@ -28,6 +29,7 @@ const ExamplesPage = () => {
         <ExampleBreadcrumbs />
         <ExampleBadge />
         <ExampleSlider />
+        <ExampleGoogleMap />
       </div>
     </>
   )

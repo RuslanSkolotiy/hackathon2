@@ -30,6 +30,7 @@ const members = [
     ],
     portfolio: ["url1", "url2"],
     favorite: false,
+    location: "Белгород",
   },
   {
     id: 2,
@@ -61,6 +62,7 @@ const members = [
     ],
     portfolio: ["url1", "url2"],
     favorite: false,
+    location: "",
   },
   {
     id: 3,
@@ -87,6 +89,7 @@ const members = [
     tags: [],
     portfolio: ["url1", "url2"],
     favorite: false,
+    location: "",
   },
   {
     id: 4,
@@ -113,6 +116,7 @@ const members = [
     tags: [],
     portfolio: ["url1", "url2"],
     favorite: false,
+    location: "",
   },
 ]
 
