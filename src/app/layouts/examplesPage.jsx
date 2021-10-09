@@ -6,17 +6,29 @@ import ExampleBreadcrumbs from "./examples/exampleBreadcrumbs"
 import ExampleBadge from "./examples/exampleBage"
 import ExampleSlider from "./examples/exampleSlider"
 import ExampleMemberCard from "./examples/exampleMemberCard"
+import Breadcrumbs from "../components/ui/breadcrumbs/breadcrumbs"
+import BreadcrumbsItem from "../components/ui/breadcrumbs/breadcrumbsItem"
 
 const ExamplesPage = () => {
   return (
     <>
-      <ExampleNavBar />
-      <ExampleProgress />
-      <ExampleButton />
-      <ExampleMemberCard />
-      <ExampleBreadcrumbs />
-      <ExampleBadge />
-      <ExampleSlider />
+      <div>
+        <Breadcrumbs>
+          <BreadcrumbsItem href="/">Главная</BreadcrumbsItem>
+          <BreadcrumbsItem href="/" active>
+            Examples
+          </BreadcrumbsItem>
+        </Breadcrumbs>
+      </div>
+      <div>
+        <ExampleNavBar />
+        <ExampleProgress />
+        <ExampleButton />
+        <ExampleMemberCard />
+        <ExampleBreadcrumbs />
+        <ExampleBadge />
+        <ExampleSlider />
+      </div>
     </>
   )
 }
