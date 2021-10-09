@@ -1,21 +1,16 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-const Breadcrumbs = () => {
+const Breadcrumbs = ({ children }) => {
   return (
     <nav aria-label="breadcrumb">
-      <ol className="breadcrumb">
-        <li className="breadcrumb-item">
-          <a href="#">Home</a>
-        </li>
-        <li className="breadcrumb-item">
-          <a href="#">Library</a>
-        </li>
-        <li className="breadcrumb-item active" aria-current="page">
-          Data
-        </li>
-      </ol>
+      <ol className="breadcrumb">{children}</ol>
     </nav>
   )
+}
+
+Breadcrumbs.propTypes = {
+  children: PropTypes.any,
 }
 
 export default Breadcrumbs
