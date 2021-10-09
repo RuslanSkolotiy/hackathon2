@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/hackathon2/static/css/main.ae1ab208.chunk.css",
+    "main.js": "/hackathon2/static/js/main.77ee04c3.chunk.js",
+    "main.js.map": "/hackathon2/static/js/main.77ee04c3.chunk.js.map",
+    "runtime-main.js": "/hackathon2/static/js/runtime-main.5d2f5be9.js",
+    "runtime-main.js.map": "/hackathon2/static/js/runtime-main.5d2f5be9.js.map",
+    "static/css/2.aa28b017.chunk.css": "/hackathon2/static/css/2.aa28b017.chunk.css",
+    "static/js/2.d3114c29.chunk.js": "/hackathon2/static/js/2.d3114c29.chunk.js",
+    "static/js/2.d3114c29.chunk.js.map": "/hackathon2/static/js/2.d3114c29.chunk.js.map",
+    "static/js/3.061e2daf.chunk.js": "/hackathon2/static/js/3.061e2daf.chunk.js",
+    "static/js/3.061e2daf.chunk.js.map": "/hackathon2/static/js/3.061e2daf.chunk.js.map",
+    "index.html": "/hackathon2/index.html",
+    "static/css/2.aa28b017.chunk.css.map": "/hackathon2/static/css/2.aa28b017.chunk.css.map",
+    "static/css/main.ae1ab208.chunk.css.map": "/hackathon2/static/css/main.ae1ab208.chunk.css.map",
+    "static/js/2.d3114c29.chunk.js.LICENSE.txt": "/hackathon2/static/js/2.d3114c29.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/hackathon2/static/media/bootstrap-icons.dfd0ea12.woff2",
+    "static/media/errorPic.d144a732.jpg": "/hackathon2/static/media/errorPic.d144a732.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5d2f5be9.js",
+    "static/css/2.aa28b017.chunk.css",
+    "static/js/2.d3114c29.chunk.js",
+    "static/css/main.ae1ab208.chunk.css",
+    "static/js/main.77ee04c3.chunk.js"
+  ]
+}
