@@ -1,5 +1,6 @@
 import React from "react"
 import Slider from "../../components/ui/slider/slider"
+import S from "react-bootstrap/Carousel"
 
 const ExampleSlider = () => {
   return (

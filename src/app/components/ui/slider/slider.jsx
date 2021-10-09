@@ -1,6 +1,16 @@
 import React from "react"
 
 const Slider = () => {
+    const count = 0 // число слайдов
+
+    const slider = [
+        {
+            img: 'https://miro.medium.com/max/9920/1*QtwrtAuLjpu7vaO2i9sbPA.png',
+            title: 'First slide label',
+            content: 'Some representative placeholder content for the first slide.'
+        },
+    ]
+
   return (
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
