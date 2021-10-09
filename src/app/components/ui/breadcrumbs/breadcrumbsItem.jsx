@@ -3,7 +3,6 @@ import PropTypes from "prop-types"
 import { Link } from "react-router-dom"
 
 const BreadcrumbsItem = ({ href, active, children }) => {
-  console.log(active)
   return (
     <li className={"breadcrumb-item" + (active ? " active" : "")}>
       {active ? children : <Link to={href}>{children}</Link>}
