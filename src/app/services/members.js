@@ -35,8 +35,8 @@ const members = [
     id: 2,
     name: "Ольга",
     lastName: "Рунова",
-    about: "about",
-    photo: "url",
+    about: "Активно изучаю JS и все, что связано с веб-разработкой. Участвую во всевозможных проектах. Люблю книги, писать код и кофе",
+    photo: "https://images.unsplash.com/photo-1482745637430-91c0bbcea3e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
     social: "text",
     whatDidInThisProject: "",
     technologies: [
