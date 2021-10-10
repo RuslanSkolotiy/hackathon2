@@ -1,13 +1,14 @@
 import React from "react"
 import Slider from "../../components/ui/slider/slider"
 import S from "react-bootstrap/Carousel"
+import MySlider from "../../components/ui/slider/MySlider";
 
 const ExampleSlider = () => {
   return (
     <div className="mb-5">
       <h2>Slider</h2>
       <div>
-        <Slider />
+        <Slider/>
       </div>
     </div>
   )

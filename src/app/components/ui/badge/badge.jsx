@@ -1,37 +1,51 @@
+//ветка badge-slider-module
+
 import React from "react"
 import PropTypes from 'prop-types'
 
 /**
- *
- * @param colorTopBadge - цвет блока в формате primary, secondary...
- * @param textTopBadge  - текст отображаемый в блоке
+ * Badge - для отображения значений количества, ярлыков или меток
+ * @param customCss - дополнительные классы в формате string
+ * @param color - цвет блока в формате элемента массива badgeColors
+ * @param textColor - цвет текста по умолчанию белый при передаче 'dark' становится черным
  * @param roundedPill   - скругление углов. Для более большого параметра передвть в параметре: pill
+ * @param children  - элемент отображаемый в badge
  * @returns {*}
  * @constructor
  */
-const Badge = ({colorTopBadge, textTopBadge, roundedPill }) => {
-    const pill = roundedPill === 'pill' ? 'rounded-pill' : ''
-    const classBadge = `badge ${pill} bg-${colorTopBadge}`
+const Badge = ({customCss, color, textColor, roundedPill, children}) => {
+    const classBadge = [
+        'badge',
+        customCss ? customCss : '',
+        textColor === 'dark' && 'text-dark',
+        roundedPill === 'pill' && 'rounded-pill',
+        `bg-${color}`
+    ].join(' ')
+
     return (
       <span
           className={classBadge}
       >
-            {textTopBadge}
+            {children}
       </span>
     )
 }
 
+const badgeColors = ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']
+
 Badge.defaultProps = {
-    colorTopBadge: 'primary',
-    textTopBadge: 'Text',
-    roundedPill: '',
+    color: 'primary',
+    textColor: '',
+    roundedPill: ''
 }
 
 Badge.propTypes = {
-    colorTopBadge: PropTypes.string,
-    textTopBadge: PropTypes.string,
+    customCss: PropTypes.string,
+    color: PropTypes.oneOf(badgeColors),
+    textColor: PropTypes.oneOf(['dark', '']),
+    roundedPill: PropTypes.oneOf(['pill', '']),
+    children: PropTypes.oneOfType([PropTypes.element, PropTypes.string])
 }
 
 export default Badge
 
-//badge-slider-module
