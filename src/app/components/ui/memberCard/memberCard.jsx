@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from 'prop-types'
 import './memberCard.css'
-import errorPic from '../../../../accets/errorPic.jpg'
+import errorPic from "../../../assets/img/errorPic.jpg"
 
 const MemberCard = ({ id, name, lastName, photo, age, about, toggleFavoriteHandler, showMember, favorite }) => {
 

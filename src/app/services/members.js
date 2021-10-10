@@ -21,10 +21,17 @@ const members = [
       {
         name: "JS",
         percent: 100,
+        color: "danger",
       },
       {
         name: "ReactJs",
-        percent: 80,
+        percent: 90,
+        color: "warning",
+      },
+      {
+        name: "VueJs",
+        percent: 40,
+        color: "info",
       },
     ],
     tags: [
@@ -46,8 +53,7 @@ const members = [
       "Активно изучаю JS и все, что связано с веб-разработкой. Участвую во всевозможных проектах. Люблю книги, писать код и кофе",
     photo:
       "https://images.unsplash.com/photo-1482745637430-91c0bbcea3e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-    social: [
-    ],
+    social: [],
     whatDidInThisProject: "",
     technologies: [
       {
@@ -80,8 +86,7 @@ const members = [
     birthYear: 1986,
     about: "about",
     photo: "https://cdn-media-1.freecodecamp.org/images/TKIz7QINBW86qDpRxZj03KU7DiMWcMW08H25",
-    social: [
-    ],
+    social: [],
     whatDidInThisProject: "",
     technologies: [
       {
@@ -108,9 +113,9 @@ const members = [
     lastName: "Ермолаев",
     birthYear: 1986,
     about: "about",
-    photo: "https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/171/2021/05/MSRTools_1200x630-1-1024x538.jpg",
-    social: [
-    ],
+    photo:
+      "https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/171/2021/05/MSRTools_1200x630-1-1024x538.jpg",
+    social: [],
     whatDidInThisProject: "",
     technologies: [
       {

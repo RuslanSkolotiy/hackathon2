@@ -7,6 +7,8 @@ import { settings } from "../services/settings"
 import GoogleMap from "../components/ui/map/googleMap"
 import Breadcrumbs from "../components/ui/breadcrumbs/breadcrumbs"
 import BreadcrumbsItem from "../components/ui/breadcrumbs/breadcrumbsItem"
+import Progress from "../components/ui/progress/progress"
+import Badge from "../components/ui/badge/badge"
 
 const MemberPage = () => {
   let { memberId } = useParams()
@@ -72,6 +74,29 @@ const MemberPage = () => {
               <div className="col-sm-2">Чем занимался в разработке данного проекта:</div>
               <div className="col-sm-10">{member.whatDidInThisProject}</div>
             </div>
+
+            <div className="mb-3 row border-bottom pb-2">
+              <div className="col-sm-2">Технологии:</div>
+              <div className="col-sm-10">
+                {member.technologies.map((item, i) => (
+                  <Progress key={i} title={item.name} value={item.percent} color={item.color}>
+                    {item.percent}%
+                  </Progress>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-3 row border-bottom pb-2">
+              <div className="col-sm-2">Теги:</div>
+              <div className="col-sm-10">
+                {member.tags.map((item, i) => (
+                  <Badge key={i} color={item.color}>
+                    {item.label}%
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
             <div className="mb-3 row border-bottom pb-2">
               <div className="col-sm-2">Город:</div>
               <div className="col-sm-10">{member.location}</div>
