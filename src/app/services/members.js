@@ -4,9 +4,14 @@ const members = [
     id: 1,
     name: "Руслан",
     lastName: "Сколотий",
-    about: "about",
-    photo: "url",
-    social: "text",
+    birthYear: 1986,
+    about:
+      "Занимаюсь программированием уже давно, но в js погрузился совсем недавно. Регулярно занимаюсь спортом. Люблю путешествовать и наблюдать закаты",
+    photo: "/images/ruslan.jpg",
+    social: [
+      { name: "Instagram", url: "https://www.instagram.com/dpruslan/" },
+      { name: "Vk", url: "https://vk.com/dp_master" },
+    ],
     whatDidInThisProject: "Тимлид, архитектура проекта, роутинг, хлебные крошки, главная страница, избранные",
     technologies: [
       {
@@ -36,9 +41,13 @@ const members = [
     id: 2,
     name: "Ольга",
     lastName: "Рунова",
-    about: "Активно изучаю JS и все, что связано с веб-разработкой. Участвую во всевозможных проектах. Люблю книги, писать код и кофе",
-    photo: "https://images.unsplash.com/photo-1482745637430-91c0bbcea3e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-    social: "text",
+    birthYear: 1986,
+    about:
+      "Активно изучаю JS и все, что связано с веб-разработкой. Участвую во всевозможных проектах. Люблю книги, писать код и кофе",
+    photo:
+      "https://images.unsplash.com/photo-1482745637430-91c0bbcea3e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+    social: [
+    ],
     whatDidInThisProject: "",
     technologies: [
       {
@@ -62,15 +71,17 @@ const members = [
     ],
     portfolio: ["url1", "url2"],
     favorite: false,
-    location: "",
+    location: "Александров, Владимирская область",
   },
   {
     id: 3,
     name: "Виталий",
     lastName: "Компаниец",
+    birthYear: 1986,
     about: "about",
     photo: "url",
-    social: "text",
+    social: [
+    ],
     whatDidInThisProject: "",
     technologies: [
       {
@@ -89,15 +100,17 @@ const members = [
     tags: [],
     portfolio: ["url1", "url2"],
     favorite: false,
-    location: "",
+    location: "Санкт-Петербург",
   },
   {
     id: 4,
     name: "Александр",
     lastName: "Ермолаев",
+    birthYear: 1986,
     about: "about",
     photo: "url",
-    social: "text",
+    social: [
+    ],
     whatDidInThisProject: "",
     technologies: [
       {
@@ -116,7 +129,7 @@ const members = [
     tags: [],
     portfolio: ["url1", "url2"],
     favorite: false,
-    location: "",
+    location: "Армавир",
   },
 ]
 
@@ -126,6 +139,16 @@ export function getMembers() {
     member.favorite = favoriteMembers.includes(member.id)
     return member
   })
+}
+
+export function getMember(id) {
+  let favoriteMembers = JSON.parse(localStorage.getItem(favoritesKey)) || []
+  const member = members.find((member) => member.id === Number(id))
+  if (member) {
+    member.favorite = favoriteMembers.includes(member.id)
+    return member
+  }
+  return false
 }
 
 export function toggleFavorite(id) {
@@ -141,5 +164,10 @@ export function toggleFavorite(id) {
 
 export function getFavoriteMembers() {
   const favoriteMembers = JSON.parse(localStorage.getItem(favoritesKey)) || []
-  return favoriteMembers.filter((member) => member.id)
+  return members
+    .filter((member) => favoriteMembers.includes(member.id))
+    .map((member) => {
+      member.favorite = favoriteMembers.includes(member.id)
+      return member
+    })
 }

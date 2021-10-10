@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Navbar from "../components/ui/navbar/navbar"
 import ExamplesPage from "../layouts/examplesPage"
 import FavoritesPage from "../layouts/favoritesPage"

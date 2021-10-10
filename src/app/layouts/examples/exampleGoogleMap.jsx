@@ -23,7 +23,7 @@ const ExampleGoogleMap = () => {
                 setQuery(target.value)
                 setDebounceQuery(target.value)
               }}></input>
-            <button className="btn btn-sm btn-outline-secondary" type="button" id="button-addon2">
+            <button className="btn btn-sm btn-outline-secondary" type="button">
               <i className="bi bi-search"></i>
             </button>
           </div>
