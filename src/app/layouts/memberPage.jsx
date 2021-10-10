@@ -47,7 +47,7 @@ const MemberPage = () => {
             <img src={member.photo} className="rounded float-end w-25 m-2" alt={`${member.name} ${member.lastName}`} />
             <div className="mb-3 row border-bottom pb-2">
               <div className="col-sm-2">Возраст:</div>
-              <div className="col-sm-10">{calcAge(member.birthYear)}</div>
+              <div className="col-sm-10">{calcAge(member.birthDay)}</div>
             </div>
             <div className="mb-3 row border-bottom pb-2">
               <div className="col-sm-2">О себе:</div>

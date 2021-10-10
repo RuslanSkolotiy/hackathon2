@@ -6,7 +6,7 @@ const ExampleBadge = () => {
     <div className="mb-5">
       <h2>Badge</h2>
       <div>
-        <Badge>Badge1</Badge>
+        <Badge roundedPill='pill' ><h1>Badge1</h1></Badge>
       </div>
     </div>
   )
