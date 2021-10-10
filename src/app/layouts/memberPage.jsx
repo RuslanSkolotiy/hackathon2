@@ -44,7 +44,11 @@ const MemberPage = () => {
                 {member.favorite ? "Удалить из избранных" : "Добавить в избранное"}
               </Button>
             </h1>
-            <img src={member.photo} className="rounded float-end w-25 m-2" alt={`${member.name} ${member.lastName}`} />
+            <img
+              src={member.photo}
+              className="rounded float-end w-25 ms-2 mb-2"
+              alt={`${member.name} ${member.lastName}`}
+            />
             <div className="mb-3 row border-bottom pb-2">
               <div className="col-sm-2">Возраст:</div>
               <div className="col-sm-10">{calcAge(member.birthDay)}</div>
@@ -90,8 +94,8 @@ const MemberPage = () => {
               <div className="col-sm-2">Теги:</div>
               <div className="col-sm-10">
                 {member.tags.map((item, i) => (
-                  <Badge key={i} color={item.color}>
-                    {item.label}%
+                  <Badge key={i} color={item.color} customCss="me-2">
+                    {item.label}
                   </Badge>
                 ))}
               </div>

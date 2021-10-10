@@ -7,7 +7,7 @@ const members = [
     birthDay: "10.05.1986",
     about:
       "Занимаюсь программированием уже давно, но в js погрузился совсем недавно. Регулярно занимаюсь спортом. Люблю путешествовать и наблюдать закаты",
-    photo: "https://pressa.tv/uploads/posts/2019-06/1559622108_pressa_tv_2.jpg",
+    photo: "https://avatars.githubusercontent.com/u/77191756?s=400&u=45b6ebe7bc9db1f08aa3ac1e8632dd27f73c8350&v=4",
     social: [
       { name: "Instagram", url: "https://www.instagram.com/dpruslan/" },
       { name: "Vk", url: "https://vk.com/dp_master" },
@@ -52,22 +52,33 @@ const members = [
     birthDay: "01.01.1988",
     about:
       "Активно изучаю JS и все, что связано с веб-разработкой. Участвую во всевозможных проектах. Люблю книги, писать код и кофе",
-    photo:
-      "https://images.unsplash.com/photo-1482745637430-91c0bbcea3e1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-    social: [{ name: "Хабр карьера", url: "https://career.habr.com/nionka" }],
+    photo: "https://avatars.githubusercontent.com/u/50372965?v=4",
+    social: [{ name: "gitHub", url: "https://github.com/nionka" }],
     whatDidInThisProject: "Карточка участника, Button",
     technologies: [
       {
         name: "HTML",
-        percent: 100,
+        percent: 70,
+      },
+      {
+        name: "CSS",
+        percent: 60,
+        color: "danger",
       },
       {
         name: "JS",
-        percent: 100,
+        percent: 50,
+        color: "warning",
+      },
+      {
+        name: "TS",
+        percent: 10,
+        color: "info",
       },
       {
         name: "ReactJs",
-        percent: 80,
+        percent: 60,
+        color: "secondary",
       },
     ],
     tags: [
@@ -112,7 +123,7 @@ const members = [
       { name: "Telegram", url: "https://t.me/VitalKom" },
       { name: "Vk", url: "https://vk.com/and_1" },
     ],
-    whatDidInThisProject: "",
+    whatDidInThisProject: "Navbar, Progress",
     technologies: [
       {
         name: "HTML",
@@ -134,7 +145,7 @@ const members = [
         color: "info",
       },
     ],
-    tags: [],
+    tags: [{ label: "Врач-офтальмолог" }, { label: "Санкт-Петербург" }],
     portfolio: ["url1", "url2"],
     favorite: false,
     location: "Санкт-Петербург",
