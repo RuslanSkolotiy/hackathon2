@@ -6,26 +6,26 @@ const ExampleBadge = () => {
     <div className="mb-5">
       <h2>Badge</h2>
       <div>
-        <p>
+        <div>
           <Badge>
             <h1>Badge1</h1>
           </Badge>
-        </p>
-        <p>
+        </div>
+        <div>
           <Badge>
             <h2>Badge1</h2>
           </Badge>
-        </p>
-        <p>
+        </div>
+        <div>
           <Badge>
             <h3>Badge1</h3>
           </Badge>
-        </p>
-        <p>
+        </div>
+        <div>
           <Badge>
             <h4>Badge1</h4>
           </Badge>
-        </p>
+        </div>
         <p>
           <Badge>Badge1</Badge>{" "}
           <Badge customCss="ms-1" color="danger">

@@ -40,7 +40,7 @@ const MemberPage = () => {
             </div>
             <h1 className="pb-3 mb-5 border-bottom">
               {member.name} {member.lastName}
-              <Button customCss="mt-auto ms-2" type="button" handleClick={() => toggleFavoriteHandler(member.id)}>
+              <Button customCss="mt-auto ms-3" type="button" handleClick={() => toggleFavoriteHandler(member.id)}>
                 {member.favorite ? "Удалить из избранных" : "Добавить в избранное"}
               </Button>
             </h1>
