@@ -1,6 +1,5 @@
 import React from "react"
-import { NavItem } from "react-bootstrap"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom"
 import Navbar from "../components/ui/navbar/navbar"
 import NavbarItem from "../components/ui/navbar/navbarItem"
 import ExamplesPage from "../layouts/examplesPage"
@@ -29,6 +28,7 @@ const Routing = () => {
           <Route path="/member/:memberId" component={MemberPage} />
           <Route path="/favorites" component={FavoritesPage} />
           <Route path="/examples" component={ExamplesPage} />
+          <Redirect from="/hackathon2/" to="/" />
           <Route path="*" component={page404} />
         </Switch>
       </div>

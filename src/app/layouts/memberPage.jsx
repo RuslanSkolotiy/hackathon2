@@ -13,12 +13,14 @@ const MemberPage = () => {
   const [member, setMember] = useState()
 
   useEffect(() => {
-    setMember({ ...getMember(memberId) })
+    const member = getMember(memberId)
+    if (member) setMember({ ...getMember(memberId) })
   }, [memberId])
 
   const toggleFavoriteHandler = (id) => {
     toggleFavorite(id)
-    setMember({ ...getMember(memberId) })
+    const member = getMember(memberId)
+    if (member) setMember({ ...getMember(memberId) })
   }
 
   return (
