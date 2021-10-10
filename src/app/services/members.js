@@ -41,7 +41,19 @@ const members = [
         color: "danger",
       },
     ],
-    portfolio: ["url1", "url2"],
+    portfolio: [
+      {
+        title: "Книга",
+        url: "https://images.unsplash.com/photo-1589998059171-988d887df646?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=876&q=80",
+      },
+      {
+        title: "Время",
+        url: "https://images.unsplash.com/photo-1518281420975-50db6e5d0a97?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1503431128871-cd250803fa41?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+      },
+    ],
     favorite: false,
     location: "Белгород",
   },
@@ -107,7 +119,14 @@ const members = [
         label: "Git",
       },
     ],
-    portfolio: ["url1", "url2"],
+    portfolio: [
+      {
+        url: "https://images.unsplash.com/photo-1419640303358-44f0d27f48e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=785&q=80",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+      },
+    ],
     favorite: false,
     location: "Александров, Владимирская область",
   },
@@ -146,7 +165,14 @@ const members = [
       },
     ],
     tags: [{ label: "Врач-офтальмолог" }, { label: "Санкт-Петербург" }],
-    portfolio: ["url1", "url2"],
+    portfolio: [
+      {
+        url: "https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1508197149814-0cc02e8b7f74?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1095&q=80",
+      },
+    ],
     favorite: false,
     location: "Санкт-Петербург",
   },
@@ -181,7 +207,18 @@ const members = [
       },
     ],
     tags: [{ label: "JS" }],
-    portfolio: ["url1", "url2"],
+    portfolio: [
+      {
+        url: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=821&q=80",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+      },
+
+      {
+        url: "https://images.unsplash.com/photo-1460627390041-532a28402358?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+      },
+    ],
     favorite: false,
     location: "Армавир",
   },

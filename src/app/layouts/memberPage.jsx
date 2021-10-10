@@ -9,6 +9,7 @@ import Breadcrumbs from "../components/ui/breadcrumbs/breadcrumbs"
 import BreadcrumbsItem from "../components/ui/breadcrumbs/breadcrumbsItem"
 import Progress from "../components/ui/progress/progress"
 import Badge from "../components/ui/badge/badge"
+import Slider from "../components/ui/slider/slider"
 
 const MemberPage = () => {
   let { memberId } = useParams()
@@ -110,6 +111,10 @@ const MemberPage = () => {
                 <GoogleMap apiKey={settings.googleApiKey} query={member.location} />
               </div>
             )}
+            <div className="mb-3 row border-bottom pb-2">
+              <div className="col-sm-2">Портфолио:</div>
+            </div>
+            <Slider images={member.portfolio} autoscroll={false} />
           </>
         )}
       </div>
