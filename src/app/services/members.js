@@ -7,12 +7,12 @@ const members = [
     birthYear: 1986,
     about:
       "Занимаюсь программированием уже давно, но в js погрузился совсем недавно. Регулярно занимаюсь спортом. Люблю путешествовать и наблюдать закаты",
-    photo: "/images/ruslan.jpg",
+    photo: "https://pressa.tv/uploads/posts/2019-06/1559622108_pressa_tv_2.jpg",
     social: [
       { name: "Instagram", url: "https://www.instagram.com/dpruslan/" },
       { name: "Vk", url: "https://vk.com/dp_master" },
     ],
-    whatDidInThisProject: "Тимлид, архитектура проекта, роутинг, хлебные крошки, главная страница, избранные",
+    whatDidInThisProject: "Тимлид, архитектура проекта, роутинг, хлебные крошки, главная страница, избранные, карта, ",
     technologies: [
       {
         name: "HTML",
@@ -79,7 +79,7 @@ const members = [
     lastName: "Компаниец",
     birthYear: 1986,
     about: "about",
-    photo: "url",
+    photo: "https://cdn-media-1.freecodecamp.org/images/TKIz7QINBW86qDpRxZj03KU7DiMWcMW08H25",
     social: [
     ],
     whatDidInThisProject: "",
@@ -108,7 +108,7 @@ const members = [
     lastName: "Ермолаев",
     birthYear: 1986,
     about: "about",
-    photo: "url",
+    photo: "https://1gew6o3qn6vx9kp3s42ge0y1-wpengine.netdna-ssl.com/wp-content/uploads/prod/sites/171/2021/05/MSRTools_1200x630-1-1024x538.jpg",
     social: [
     ],
     whatDidInThisProject: "",

@@ -5,6 +5,8 @@ import { calcAge } from "../utilities/math"
 import Button from "../components/ui/button/button"
 import { settings } from "../services/settings"
 import GoogleMap from "../components/ui/map/googleMap"
+import Breadcrumbs from "../components/ui/breadcrumbs/breadcrumbs"
+import BreadcrumbsItem from "../components/ui/breadcrumbs/breadcrumbsItem"
 
 const MemberPage = () => {
   let { memberId } = useParams()
@@ -24,6 +26,14 @@ const MemberPage = () => {
       <div>
         {member && (
           <>
+            <div>
+              <Breadcrumbs>
+                <BreadcrumbsItem href="/">Главная</BreadcrumbsItem>
+                <BreadcrumbsItem href={"/member/" + member.id} active>
+                  {member.name} {member.lastName}
+                </BreadcrumbsItem>
+              </Breadcrumbs>
+            </div>
             <h1 className="pb-3 mb-5 border-bottom">
               {member.name} {member.lastName}
               <Button customCss="mt-auto ms-2" type="button" handleClick={() => toggleFavoriteHandler(member.id)}>

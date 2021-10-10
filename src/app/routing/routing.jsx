@@ -1,6 +1,8 @@
 import React from "react"
+import { NavItem } from "react-bootstrap"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Navbar from "../components/ui/navbar/navbar"
+import NavbarItem from "../components/ui/navbar/navbarItem"
 import ExamplesPage from "../layouts/examplesPage"
 import FavoritesPage from "../layouts/favoritesPage"
 import MainPage from "../layouts/mainPage"
@@ -9,14 +11,18 @@ import page404 from "../layouts/page404"
 
 const Routing = () => {
   const menu = [
-    { title: "Home", link: "/" },
-    { title: "Favorites", link: "/favorites" },
-    { title: "Examples", link: "/examples" },
+    { title: "Главная", href: "/" },
+    { title: "Избранные", href: "/favorites" },
+    { title: "Примеры", href: "/examples" },
   ]
 
   return (
     <Router>
-      <Navbar menu={menu} />
+      <Navbar title="Group4">
+        {menu.map((item, i) => (
+          <NavbarItem key={i} name={item.title} href={item.href} />
+        ))}
+      </Navbar>
       <div className="container py-3">
         <Switch>
           <Route path="/" exact component={MainPage} />
