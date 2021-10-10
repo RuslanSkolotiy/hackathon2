@@ -1,19 +1,23 @@
-import React from "react"
+import React from "react";
 
-const Progress = () => {
+const Progress = ({ now, label, min, max, variant }) => {
   return (
-    <div className="progress">
-      <div
-        className="progress-bar"
-        role="progressbar"
-        style={{ width: "25%" }}
-        aria-valuenow="25"
-        aria-valuemin="0"
-        aria-valuemax="100">
-        25%
+    <>
+      <h1>HTML</h1>
+      <div className="progress">
+        <div
+          className={"progress-bar" + variant}
+          role="progressbar"
+          style={{ width: label }}
+          aria-valuenow={now}
+          aria-valuemin={min}
+          aria-valuemax={max}
+        >
+          {now}
+        </div>
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default Progress
+export default Progress;
