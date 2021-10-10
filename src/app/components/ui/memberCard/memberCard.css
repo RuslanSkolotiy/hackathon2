@@ -1,6 +1,9 @@
+.card {
+  transition: all 0.5s;
+}
+
 .card:hover {
   transform: scale(105%);
-  transition: all 0.5s;
 }
 
 .card i {
