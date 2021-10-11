@@ -9,7 +9,7 @@ const ExampleSlider = () => {
     },
     {
       title: "Slide 2",
-      url: "https://lh3.googleusercontent.com/proxy/Yipcq5cNgdJ61sTp1CQ2N4Z--F35_T98fAmq69J0tm32bka4sHM5cHmuwcED3gE-axAmqm508Ag6EPmM1UCU3ValHBeNyAoO4EaORo6gqi8B",
+      url: "https://static5.depositphotos.com/1003371/521/i/600/depositphotos_5214674-stock-photo-tropical-sea-sunset.jpg",
     },
   ]
   return (
