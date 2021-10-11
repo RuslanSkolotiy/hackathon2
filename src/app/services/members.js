@@ -61,7 +61,7 @@ const members = [
     id: 2,
     name: "Ольга",
     lastName: "Рунова",
-    birthDay: "01.01.1988",
+    birthDay: "01.01.1989",
     about:
       "Активно изучаю JS и все, что связано с веб-разработкой. Участвую во всевозможных проектах. Люблю книги, писать код и кофе",
     photo: "https://avatars.githubusercontent.com/u/50372965?v=4",
@@ -134,7 +134,7 @@ const members = [
     id: 3,
     name: "Виталий",
     lastName: "Компаниец",
-    birthDay: "02.12.1986",
+    birthDay: "02.12.1987",
     about:
       "Мне 34 года. На данный момент работаю врачом-офтальмологом в Санкт-Петербурге. Планирую кардинально поменять сферу деятельности - заниматься web-разработкой. Уже прошёл курсы по вёрстке (HTML5, CSS3, JS, частично jQuery). На данный момент в процессе изучения React JS.",
     photo: "https://avatars.githubusercontent.com/u/59345404?v=4",
@@ -180,7 +180,7 @@ const members = [
     id: 4,
     name: "Александр",
     lastName: "Ермолаев",
-    birthDay: "02.02.1983",
+    birthDay: "02.02.1984",
     about: "О себе: 37 лет на данны момент работаю преподавателем в Кванториуме по направлению IT и VR.",
     photo: "https://avatars.githubusercontent.com/u/62185823?v=4",
     social: [],
