@@ -1,17 +1,30 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import PropTypes from "prop-types"
 
 const Slider = ({ images, autoscroll, interval }) => {
   const [currectIndex, setCurrectIndex] = useState(0)
+  const timerId = useRef()
+
   useEffect(() => {
-    if (autoscroll) {
-      setTimeout(autoScroll, interval)
+    restartTimer()
+    return () => {
+      if (timerId.current) clearTimeout(timerId.current)
     }
   }, [])
 
-  const autoScroll = () => {
+  const timer = () => {
+    console.log("timer")
     nextHandler()
-    setTimeout(autoScroll, interval)
+    if (timerId.current) clearTimeout(timerId.current)
+    timerId.current = setTimeout(timer, interval)
+  }
+
+  const restartTimer = () => {
+    if (autoscroll) {
+      console.log("restartTimer", timerId.current)
+      if (timerId.current) clearTimeout(timerId.current)
+      timerId.current = setTimeout(timer, interval)
+    }
   }
 
   const prevHandler = () => {
@@ -20,6 +33,7 @@ const Slider = ({ images, autoscroll, interval }) => {
     } else {
       setCurrectIndex(currectIndex - 1)
     }
+    restartTimer()
   }
 
   const nextHandler = () => {
@@ -30,10 +44,12 @@ const Slider = ({ images, autoscroll, interval }) => {
         return prevState + 1
       }
     })
+    restartTimer()
   }
 
   const setSlideHandler = (index) => {
     setCurrectIndex(index)
+    restartTimer()
   }
 
   return (
